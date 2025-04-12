@@ -1,44 +1,138 @@
+:root { /* Default Theme */
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --secondary-background: #1e1e1e;
+    --link-color: #4dabf7;
+    --link-hover-color: #82cfff; 
+}
+
+/* Body */
+
+body.light-mode { /* Light Theme */
+    --background-color: #f4f4f9;
+    --text-color: #272727;
+    --secondary-background: #dbdbdb;
+    --link-color: #0066cc; 
+    --link-hover-color: #004999; 
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
+
+/* Header */
+
 header {
-    background: #333;
-    color: #fff;
+    background: var(--secondary-background);
+    color: var(--text-color);
     padding: 1rem 0;
     text-align: center;
 }
+
 header h1 {
     margin: 0;
     font-size: 2.5rem;
 }
+
+/* Navigation */
+
 nav {
     margin-top: 1rem;
 }
+
 nav a {
-    color: #fff;
+    color: var(--text-color);
     text-decoration: none;
     margin: 0 1rem;
 }
+
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline; 
 }
+
+/* General link styles */
+a {
+    text-decoration: none;
+}
+
+/* Custom link styles for section links */
+section a {
+    color: var(--link-color);
+}
+
+section a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Buttons */
+
+button#theme-mode-toggle {
+    display: block;
+    margin: 1rem auto;
+    background: var(--secondary-background);
+    color: var(--text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button#theme-mode-toggle:hover {
+    background: var(--text-color);
+    color: var(--background-color);
+}
+
+/* Sections */
+
 section {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1rem;
-    background: #fff;
+    background: var(--secondary-background);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+section h2 {
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 0.5rem; 
+    margin-bottom: 1rem; 
+}
+
+main {
+    flex: 1; 
+}
+
+/* Footer */
+
 footer {
     text-align: center;
     padding: 1rem 0;
-    background: #333;
-    color: #fff;
-    margin-top: 2rem;
+    background: var(--secondary-background);
+    color: var(--text-color);
+    margin-top: auto; 
+}
+
+/* Profile Picture */
+
+.profile-picture {
+    display: block;
+    width: 300px;
+    height: 300px; 
+    border-radius: 50%; 
+    margin: 1rem auto 1rem;
+    object-fit: cover;
+    border: 3px solid var(--text-color); 
 }
