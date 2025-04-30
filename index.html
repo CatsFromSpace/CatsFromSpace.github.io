@@ -15,36 +15,37 @@
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#Certifications">Certifications</a>
+            <!--<a href="#Certifications">Certifications</a>-->
             <a href="#Other Cool Stuff">Fun Stuff</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
     
     <main>
-        <img src="resources/profile.png" alt="Profile Picture" class="profile-picture">
+        <img src="resources/profile.jpg" alt="Profile Picture" class="profile-picture">
         <button id="theme-mode-toggle"></button>
 
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! As a recent graduate with an Associates of Applied Science in Computer Science, 
-                I'm drawn to full stack development because it gives me exciting challenges from both front-end and back-end to tackle! 
-                I love the process of building complete solutions, from designing intuitive user experiences to the logic and infrastructure that powers them. 
-                I'm always eager to learn new technologies in order to grow as a developer!</p>
+            <p>Hey! I'm Cali. I'm a software engineer with an AAS in Computer Science. As a front-end leaning developer with full-stack experience,
+                I've enjoyed creating full package experiences. Web application development and game development have been my favorite niches to explore. 
+                I have a passion for learning new technologies and improving my skills, and i'm currently looking for a full-time position in software development!</p>
+            </p>
             
             <h3>Career Goals</h3>
-            <p>My career goals include becoming a proficient full stack developer, contributing to innovative projects, and continuously expanding my skill set.</p>
+            <p>My career goals include becoming a proficient front-end developer, contributing to fun and innovative projects, and continuously expanding my skill set.</p>
             
             <h3>Hobbies</h3>
             <p>In my free time, I enjoy hiking trails, gaming, 
-                <a href="#Other Cool Stuff">3D modeling</a>, and 
-                <a href="#Other Cool Stuff">game development</a>.
+                <a href="https://www.artstation.com/weemo">3D modeling</a>, and 
+                <a href="https://weemo.itch.io/">game development</a>.
             </p>
         </section>
 
         <section id="education">
             <h2>Education</h2>
             <p>Associates of Applied Science in Computer Science from Helena College.</p>
+            <p>Phi Theta Kappa Honors</p>
         </section>
 
         <section id="skills">
@@ -52,68 +53,88 @@
             <ul>
                 <li><strong>Languages: </strong>HTML, CSS, JavaScript, Java, C#, Python, GDScript</li>
                 <li><strong>Frameworks: </strong>React, Node.js, ASP.NET</li>
-                <li><strong>Tools/Other: </strong>PostgreSQL, VS Code, Git, AWS</li>
+                <li><strong>Tools/Other: </strong>PostgreSQL, Git/Version Control, AWS</li>
             </ul>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             
-            <h3>
-                <a href="https://github.com/CatsFromSpace/plant-care-reminder-app" target="_blank">
-                    Android Plant Care Reminder App
-                </a>
-            
-            </h3>
-            
-            <h3>
-                <a href="https://github.com/CatsFromSpace/Trip-Budget-Planner" target="_blank">
-                    Trip Budget Planner
-                </a>
-            </h3>
-            
-            <h3>
-                <a href="https://github.com/CatsFromSpace/Recipe-Management-App" target="_blank">
-                    Recipe Management App 
-                </a>
-            </h3>
-            
-            <h3>
-                <a href="https://github.com/CatsFromSpace/Monster-School-Database" target="_blank">
-                    Monster School Database
-                </a>
-            </h3>
-            
-            <h3>
-                <a href="https://github.com/Weemo001/WizWaves" target="_blank">
-                    Game Project: 'WizWaves'
-                </a>
-            </h3>
-            
-            <h3>
-                <a href="https://github.com/Weemo001/MechaMovementSystem" target="_blank">
-                    Godot Demo Project: 'MMS Demo'
-                </a>
-            </h3>
-            
-            <h3>
-                <a href="https://github.com/CatsFromSpace/SAD-Speech-and-Debate-Project" target="_blank">
-                    SAD Project: 'Helena Speech and Debate Judge Optimization'
-                </a>
-            </h3>
-            
-            <h3>
-                <a href="https://github.com/CatsFromSpace/Helena-Community-Solar-PM-Project" target="_blank">
-                    PM Project: 'Helena Community Solar'
-                </a>
-            </h3>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="resources/plantcareapp.png" alt="Plant Care Reminder App" class="project-image">
+                    <p>
+                        <a href="https://github.com/CatsFromSpace/plant-care-reminder-app" target="_blank">
+                            Android Plant Care App
+                        </a>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="resources/budgetplanner.png" alt="Trip Budget Planner" class="project-image">
+                    <p>
+                        <a href="https://github.com/CatsFromSpace/trip-budget-planner" target="_blank">
+                            Trip Budget Planner
+                        </a>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="resources/recipemanagement.png" alt="Recipe Management App" class="project-image">
+                    <p>
+                        <a href="https://github.com/CatsFromSpace/recipe-management-app" target="_blank">
+                            Recipe Management App
+                        </a>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="resources/noimage.png" alt="Monster School Database" class="project-image">
+                    <p>
+                        <a href="https://github.com/CatsFromSpace/monster-school-database" target="_blank">
+                            Monster School Database
+                        </a>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="resources/wizwaves.png" alt="WizWaves" class="project-image">
+                    <p>
+                        <a href="https://github.com/Weemo001/WizWaves" target="_blank">
+                            Game Project: 'WizWaves'
+                        </a>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="resources/mmsdemo.png" alt="Mecha Movement System" class="project-image">
+                    <p>
+                        <a href="https://github.com/Weemo001/MechaMovementSystem" target="_blank">
+                            Godot Demo Project: 'MMS Demo'
+                        </a>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="resources/jobtrackerapp.png" alt="Job Application Tracker App" class="project-image">
+                    <p>
+                        <a href="https://github.com/CatsFromSpace/Job-Tracker-App" target="_blank">
+                            Job Application Tracker App
+                        </a>
+                    </p>
+                </div>
+                <div class="project-item">
+                    <img src="resources/noimage.png" alt="Job Application Tracker App API" class="project-image">
+                    <p>
+                        <a href="https://github.com/CatsFromSpace/JobTrackerAPI" target="_blank">
+                            Job Application Tracker App API
+                        </a>
+                    </p>
+                </div>
+            </div>
         </section>
 
+        <!--
         <section id="Certifications">
             <h2>Certifications</h2>
             <h3>Certification 1:</h3> Text Here
             <h3>Certification 2:</h3> Text Here
         </section>
+        -->
 
         <section id="Other Cool Stuff">
             <h2>Other Cool Stuff</h2>
@@ -142,5 +163,11 @@
         </nav>
         <p>&copy; 2025 CatsFromSpace. All rights reserved.</p>
     </footer>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
 </body>
 </html>
