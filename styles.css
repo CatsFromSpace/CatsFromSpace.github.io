@@ -1,5 +1,6 @@
 :root { /* Dark Theme - Default */
     --background-color: linear-gradient(to bottom, #000000, #1a0028); /* Gradient from dark bluish purple to dark blue */
+    --background-color2: #1a0028;
     --background-size: cover; 
     --background-attachment: fixed; 
     --text-color: #e0e0e0;
@@ -12,6 +13,7 @@
 
 body.light-mode { /* Light Theme */
     --background-color: linear-gradient(to bottom, #ffffff, #bbfea6);
+    --background-color2: #fff;
     --background-size: cover;
     --background-attachment: fixed;
     --text-color: #272727;
@@ -92,7 +94,7 @@ button#theme-mode-toggle {
 
 button#theme-mode-toggle:hover {
     background: var(--text-color);
-    color: var(--background-color);
+    color: var(--background-color2);
 }
 
 /* Sections */
